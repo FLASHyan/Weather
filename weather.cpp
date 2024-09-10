@@ -95,7 +95,7 @@ Weather::Weather(QWidget *parent) :
 
 	// 请求天气API信息
 	url = "http://t.weather.itboy.net/api/weather/city/";
-	city = u8"武汉";
+	city = u8"北京";
 	cityTmp = city;
 	manager = new QNetworkAccessManager(this);
 	connect(manager, SIGNAL(finished(QNetworkReply*)), this, SLOT(replayFinished(QNetworkReply*)));
